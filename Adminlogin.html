@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Williams-Heard Academy</title>
+        <!-- CSS  -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="materialize/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="parallax-template.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>body { font-family: Arial, Helvetica, sans-serif; } /* Full-width input fields */input[type=text], input[type=password] { width: 170%; padding: 50px 20px; margin: 30px 0; display: inline-block; border: 1px solid #ccc; box-sizing: border-box; } /* Set a style for all buttons */button { background-color: teal; color: white; padding: 25px 50px; margin: 8px 0; border: none; cursor: pointer; width: 100%; } button:hover { opacity: 0.8; } /* Extra styles for the cancel button */.cancelbtn { width: auto; padding: 10px 18px; background-color: #f44336; } /* Center the image and position the close button */.imgcontainer { text-align: center; margin: 12px 0 12px 0; position: relative; } img.avatar { width: 30%; border-radius: 40%; } .container { padding: 16px; } span.psw { float: right; padding-top: 16px; } /* The Modal (background) */.modal { display: none;  /* Hidden by default */ position: fixed;  /* Stay in place */ z-index: 1;  /* Sit on top */ left: 0; top: 0; width: 30%;  /* Full width */ height: 80%;  /* Full height */ overflow: auto;  /* Enable scroll if needed */ background-color: rgb(0,0,0);  /* Fallback color */ background-color: rgba(0,0,0,0.4);  /* Black w/ opacity */ padding-top: 60px; } /* Modal Content/Box */.modal-content { background-color: #fefefe; margin: 5% auto 15% auto;  /* 5% from the top, 15% from the bottom and centered */ border: 1px solid #888; width: 80%;  /* Could be more or less, depending on screen size */ } /* The Close Button (x) */.close { position: absolute; right: 25px; top: 0; color: #000; font-size: 35px; font-weight: bold; } .close:hover, .close:focus { color: red; cursor: pointer; } /* Add Zoom Animation */.animate { -webkit-animation: animatezoom 0.6s; animation: animatezoom 0.6s; } @-webkit-keyframes animatezoom { from {  -webkit-transform: scale(0); }  to {  -webkit-transform: scale(1); } } @keyframes animatezoom { from {  transform: scale(0); }  to {  transform: scale(1); } } /* Change styles for span and cancel button on extra small screens */@media screen and (max-width: 200px) { span.psw {  display: block;  float: none; }  .cancelbtn {  width: 100%; } }</style>
+    </head>
+    <body>
+        <nav class="white" role="navigation">
+            <div class="nav-wrapper white"> 
+                <a href="#" class="brand-logo"></a> 
+                <ul id="nav-mobile" class="right hide-on-med-and-down"> 
+                    <li>
+                        <a href="index.html" class="teal-text">Home</a>
+                    </li>                     
+                    <li>
+                        <a href="Students.html" class="purple-text">Students</a>
+                    </li>                     
+                    <li>
+                        <a href="Admin.html" class="purple-text">Admin</a>
+                    </li>                     
+                    <li> 
+                        <a class="dropdown-button teal-text" href="About.html" data-activates="dropdown1">About Us</a> 
+                        <ul id="dropdown1" class="dropdown-content"> 
+                            <li>
+                                <a href="#!">one</a>
+                            </li>                             
+                            <li>
+                                <a href="#!">two</a>
+                            </li>                             
+                            <li class="divider"></li>                             
+                            <li>
+                                <a href="#!">three</a>
+                            </li>                             
+                        </ul>                         
+                    </li>                     
+                </ul>                 
+                <i class="large left material-icons"><img src="assets/img/WHA.png" width="150" class="circle"/>attach_file</i>
+            </div>
+        </nav>
+        <div id="index-banner" class="parallax-container">
+            <div>
+                <div class="container teal-text">
+                    <br>
+                    <br>
+                    <h1 class="center header purple-text text-darken-2">Williams-Heard Academy</h1>
+                    <div class="row center">
+                        <h2 class="col header light s12"><b>Administration Portal</b></h2>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <br/>
+        <div class="row center">
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+        </div>         
+        <div id="id01" class="modal">
+            <form class="modal-content animate" action="Admin.html" method="post">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <img src="assets/img/img_avatar2.jpg" alt="Avatar" class="avatar">
+                </div>
+                <div class="container">
+                    <label for="Admin">
+                        <b>Username</b>
+                    </label>
+                    <input type="text" placeholder="Enter Username" name="Admin" required>
+                    <label for="@dminXanadu">
+                        <b>Password</b>
+                    </label>
+                    <input type="password" placeholder="Enter Password" name="@dminXanadu" required>
+                    <button href="admin.html" class="btn-large waves-effect waves-light teal lighten-1" type="submit">Login</button>
+                </div>
+                <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                </div>
+            </form>
+        </div>
+        <script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+        <footer class="page-footer teal">
+            <br> 
+            <br> 
+            <br> 
+            <br> 
+            <br>
+            <div class="container">
+                <div class="row">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                    <div class="col l4 s12">
+                        <img src="assets/img/GACC.PNG" width="150">
+                    </div>
+                    <br>
+                    <p>The Williams-Heard Academy is accredited fully (ACCF) as a non-traditional education center for grades 9-12 by the Georgia Accrediting Commission Inc.</p>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    <p>© 2023 Michael</p>
+                </div>
+            </div>
+        </footer>
+        <!--  Scripts-->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="materialize/js/materialize.js"></script>
+        <script>
+    $(document).ready(function() { M.AutoInit() });
+  </script>
+    </body>
+</html>
